@@ -6,15 +6,20 @@ var leitor = readline.createInterface({
 }); 
 
 
-function requisita_idade(){
-    leitor.question("Qual a sua idade: ", (idade) => {
-        console.log("Então sua idade é: " + idade);
-        return idade;
+leitor.question("Quantas expressões serão inseridas: ", (num_expressoes) => {
+    console.log(num_expressoes)
+    
 
-    })
-}
+    for(let limitante = 0; limitante != num_expressoes; limitante++){
+        leitor.question("Qual a expressão: ", (expressao => {
+            num_caractere = expressao.length;
+            let potencia = (expressao.substr(num_caractere - 1));
+            let base =  (expressao.substr(0,num_caractere-1));;
+            console.log(base ** potencia);
+            
+        }))
+    }
 
-var idade = requisita_idade();
-console.log(idade);
+    leitor.close();
 
-// console.log("E sua idade equivale à" + idade);
+})
