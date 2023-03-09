@@ -16,7 +16,6 @@ leitor.question("Quantas expressões serão inseridas: ", (num_expressoes) => {
             let potencia = (expressao.substr(num_caractere - 1));
             let base =  (expressao.substr(0,num_caractere-1));;
             console.log(base ** potencia);
-            
         }))
     }
 
