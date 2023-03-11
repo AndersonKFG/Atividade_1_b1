@@ -37,15 +37,3 @@ botao.addEventListener('click', function(){
     }
     
 })
-
-function codigo_principal(){
-
-    // num_caractere = valor.length;
-    // let potencia = (valor.substr(num_caractere - 1));
-    // let base =  (valor.substr(0,num_caractere-1));;
-    // soma_total = soma_total + base ** potencia
-    // quantidade_expressões--;
-    // num_expressao++;
-
-    
-}
