@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Potencia</title>
+
+    <style>
+        .console_main{
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 350px;
+            height: 200px;
+            display: block;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+
+        #console, #expressoes_input{
+            width: 300px;
+            margin-top: 30px;
+        }
+
+        #enviar_console{
+            width: 200px;
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="console_main">
+        <legend>Abra o console, ele pedirá uma informação, digite-a abaixo e clique no botão para respondê-la</legend>
+        <input type="number" id="console" placeholder="Campo para digitar a quantidade de expressões.">
+        <input type="text" id="expressoes_input" placeholder="Campo para digitar as expressões." disabled="true">
+        <button id="enviar_console">Enviar para o console</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
