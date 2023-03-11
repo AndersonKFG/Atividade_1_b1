@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade Potencia</title>
+    <title>Torneio de tênis</title>
 
     <style>
         .console_main{
             border: 1px solid black;
             border-radius: 10px;
             width: 350px;
-            height: 300px;
+            height: 250px;
             display: block;
             text-align: center;
             padding-top: 20px;
         }
 
 
-        #console, #expressoes_input{
+        #console{
             width: 300px;
             margin-top: 30px;
         }
@@ -29,17 +29,18 @@
         }
 
     </style>
+
 </head>
 <body>
 
     <div class="console_main">
         <legend>Abra o console, ele pedirá uma informação, digite-a abaixo e clique no botão para respondê-la</legend>
-        <input type="number" id="console" placeholder="Campo para digitar a quantidade de expressões.">
-        <input type="text" id="expressoes_input" placeholder="Campo para digitar as expressões." disabled="true">
-        <p>Digite as expressões, separando-as por ',' | Ex.: 345,234,345 são 3 expressões.</p>
+        <input type="text" id="console" placeholder="Campo para digitar vitórias e derrotas">
+        <p>Digite a sequência de vitórias ou derrotas separando-as por "," <br> Para vitórias digite 'V', para derrotas digite 'D'. <br> Ex.: V,D,V,D,V</p>
         <button id="enviar_console">Enviar para o console</button>
     </div>
 
-    <script src="app.js"></script>
+    <script src="torneio.js"></script>
+    
 </body>
 </html>

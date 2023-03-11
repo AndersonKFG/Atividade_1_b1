@@ -16,7 +16,7 @@ botao.addEventListener('click', function(){
         count++;
         input.disabled = true;
         expressoes_input.disabled = false;
-        console.log("Digite as expressões, separando-as por ',' Ex.: 345,234,345 são 3 expressões.")
+
     }else{
         let valor = expressoes_input.value;
         let valores = valor.split(",")
